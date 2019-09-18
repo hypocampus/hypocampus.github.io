@@ -1,0 +1,183 @@
+<!DOCTYPE HTML>
+<!--
+	Multiverse by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Griffin & Bridgit</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link href="https://fonts.googleapis.com/css?family=Karla&display=swap" rel="stylesheet">
+		<link rel="shortcut icon" href="images/favi.png" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<nav>
+							<ul>
+								<li><a href="#footerLA">Tips for LA</a></li>
+								<li><a href="https://www.amazon.com/wedding/share/bridgitandgriffin">Registry</a></li>
+								<li><a href="#footer">RSVP</a></li>
+							</ul>
+						</nav>
+					</header>
+					<div class = "blue"></div>
+
+<div class = "splash">
+	<img class = "splash_inner" src="images/txt-final.png" alt="" />
+</div>
+				<!-- Main -->
+					<div id="main">
+						<!-- <div class = "rsvp" ><a href="#footer" style ="text-decoration: none;">RSVP</a></div> -->
+
+						<article class="thumb">
+							<a class="image"><img src="images/thumbs/7.jpg" alt="" /></a>
+						</article>
+
+
+							<article class="thumb">
+							<a  class="image"><img src="images/thumbs/snow_compressed.gif" alt="" /></a>
+						</article>
+						<article class="thumb">
+							<a class="image"><img src="images/thumbs/1.jpg" alt="" /></a>
+						</article>
+						<article class="thumb">
+							<a class="image"><img src="images/thumbs/unnamed.jpg" alt="" /></a>
+						</article>
+						
+						<article class="thumb">
+							<a class="image"><img src="images/thumbs/show_compressed.gif" alt="" /></a>
+						</article>
+						<article class="thumb">
+							<a class="image"><img src="images/thumbs/2.jpg" alt="" /></a>
+						</article>
+						<article class="thumb">
+							<a class="image"><img src="images/thumbs/3.jpg" alt="" /></a>
+						</article>
+						<article class="thumb">
+							<a class="image"><img src="images/thumbs/4.jpg" alt="" /></a>
+						</article>
+
+
+
+						<article class="thumb">
+							<a href="images/fulls/03.jpg" class="image"><img src="images/thumbs/hot_compressed.gif" alt="" /></a>
+						</article>
+
+						<article class="thumb">
+							<a href="images/fulls/04.jpg" class="image"><img src="images/thumbs/5.jpg" alt="" /></a>
+						</article>
+						<article class="thumb">
+							<a href="images/fulls/05.jpg" class="image"><img src="images/thumbs/web.png" alt="" /></a>
+						</article>
+						<article class="thumb">
+							<a href="images/fulls/05.jpg" class="image"><img src="images/thumbs/surprise_compressed.gif" alt="" /></a>
+						</article>
+
+						<article class="thumb">
+							<a href="images/fulls/05.jpg" class="image"><img src="images/thumbs/6.jpg" alt="" /></a>
+						</article>
+							<article class="thumb">
+							<a href="images/fulls/01.jpg" class="image"><img src="images/thumbs/fishcup.jpg" alt="" /></a>
+						</article>
+
+						<!-- <article class="thumb">
+							<a href="images/fulls/03.jpg" class="image"><img src="images/thumbs/spread.jpg" alt="" /></a>
+						</article> -->
+
+							<article class="thumb">
+							<a href="images/fulls/03.jpg" class="image"><img src="images/thumbs/IMG_3298.jpg" alt="" /></a>
+						</article>
+
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer" class="panel">
+						<div class="inner split">
+							<div>
+								<section>
+									<h1>Details</h1>
+									<p>Sunday, October 13 at 5:00pm</p>
+									<p>Sunset Restaurant, Malibu, CA</p>
+									<p>Ceremony with Reception to follow</p>
+								</section>
+								<section>
+
+							</div>
+							<div>
+								<section>
+									<h1>RSVP</h1>
+									<form name="submit-to-google-sheet">
+										<div class="fields">
+											<div class="field half">
+												<input type="text" name="firstName" placeholder="First Name" />
+											</div>
+											<div class="field half">
+												<input type="text" name="lastName" placeholder="Last Name" />
+											</div>
+
+											<div class="field half">
+												<select name="foodOption">
+													  <option value="chicken">Dijon chicken breast</option>
+													  <option value="pasta">Farfalle pasta</option>
+													  <option value="salmon">Pan seared scottish salmon</option>
+													</select>
+											</div>
+											<div class="field half">
+												<input type="text" name="songRequest" placeholder="Song Request" />
+											</div>
+
+										</div>
+										<ul class="actions">
+											<li><input type="submit" value="Send" class="primary" /></li>
+											<li><input type="reset" value="Reset" /></li>
+										</ul>
+									</form>
+								</section>
+							</div>
+						</div>
+					</footer>
+					<footer id="footerLA" class="panel LA">
+						<div class="inner split">
+							<div>
+								<section>
+									<iframe src="images/la.pdf" width="200%" height="1000px"></iframe>
+								</section>
+								<section>
+
+							</div>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script>
+			  const scriptURL = 'https://script.google.com/macros/s/AKfycbyQgl-zmy3T1oBbL-Rkp10jwwirtFNnOtvyu0lIDOuP76deb9iJ/exec'
+			  const form = document.forms['submit-to-google-sheet']
+
+			  form.addEventListener('submit', e => {
+			    e.preventDefault()
+			    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+			      .then(response => alert('Thanks for RSVPing!'))
+			      .catch(error => console.error('Error!', error.message))
+			  })
+			</script>
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
